@@ -93,10 +93,13 @@
   }
   .media-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.4rem;
   }
-  @media (max-width: 720px) {
+  @media (max-width: 980px) {
+    .media-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
     .media-grid { grid-template-columns: 1fr; }
   }
   .media-item h3 {
@@ -289,7 +292,7 @@
 <div class="companions">
   <div class="companions-card">
     <h2>Companion materials</h2>
-    <p class="lede">Four ways into the same proposal — read the full document below, or start with one of these.</p>
+    <p class="lede">Three ways into the same proposal — read the full document below, or start with one of these.</p>
     <div class="media-grid">
       <div class="media-item">
         <h3>Overview video</h3>
@@ -309,13 +312,6 @@
           <img src="infographic.png" alt="Infographic: From Committee to Mutual Aid, a path forward for Bear Creek Friends Meeting" loading="lazy">
         </figure>
         <figcaption>A one-page visual summary. Click to enlarge.</figcaption>
-      </div>
-      <div class="media-item">
-        <h3>Mind map</h3>
-        <figure>
-          <img src="mindmap.jpg" alt="Mind map outlining the document's sections" loading="lazy">
-        </figure>
-        <figcaption>The document's structure, branch by branch. Click to enlarge.</figcaption>
       </div>
     </div>
   </div>
